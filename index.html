@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrawan Sharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/button.css" />
+  </head>
+  <style>
+    body {
+      font-family: victor mono;
+      background-color: #111111;
+      color: #e7e7e7;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: center;
+    }
+    h1 {
+      font-weight: bolder;
+      font-family: victor mono;
+      font-size: 2em;
+    }
+    img {
+      width: 200px;
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      /* margin: 20px 20px; */
+      font-size: 1em;
+      font-weight: 300;
+    }
+    .content {
+      margin: 20px 20px;
+    }
+
+    .button-container {
+      display: flex;
+      column-gap: 110px;
+      margin: 20px 20px;
+      /* justify-content: space-between; */
+      flex-wrap: wrap;
+    }
+    footer {
+      font-size: 3px;
+    }
+  </style>
+  <body>
+    <div class="heading">
+      <h1>Shrawan Sharma</h1>
+    </div>
+    <div class="image">
+      <img src="./images/bg.png" alt="" />
+    </div>
+    <div class="content">
+      <div id="music"><button id="jethalal">Shrawan Sharma</button></div>
+      <p>Hello Namaste</p>
+      <p>
+        Hello i am Shrawan Sharma a passionate webdeveloper, singer, songwriter,
+        producer currently learning web development.I am currently studying and
+        on a solo trip to become a web developer.I also make music which i post
+        on my Youtube. You can get links of all
+        <span style="text-decoration: underline; font-weight: bold"
+          >My Projects</span
+        >
+        <span style="text-decoration: underline; font-weight: bold">Music</span>
+        <span style="text-decoration: underline"></span> below. You can also
+        download
+        <span style="text-decoration: underline; font-weight: bold">My CV</span>
+        from below links
+      </p>
+      <h2>LINKS YOU MIGHT BE LOOKING FOR</h2>
+    </div>
+    <div class="button-container">
+      <a href="#">
+        <button class="btn">My CV</button>
+      </a>
+      <a href="https://github.com/samael-0">
+        <button class="btn">My Github</button>
+      </a>
+      <a href="https://www.youtube.com/@shrawan__">
+        <button class="btn">My Youtube</button>
+      </a>
+      <a href="#">
+        <button class="btn">My Linkdin</button>
+      </a>
+    </div>
+    <footer>this website is heavily inspired by hiteshchaudhary.com</footer>
+  </body>
+  <script>
+    const music = document.getElementById("jethalal");
+    jethalal.addEventListener(
+      "click",
+      function () {
+        let mySound = new Audio("music/jethalal.mp3");
+        mySound.play();
+      },
+      false
+    );
+  </script>
+</html>
